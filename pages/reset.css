@@ -49,3 +49,6 @@ img {
 	display: block;
 	width: 30%;
 }
+a {
+	text-decoration: none;
+}

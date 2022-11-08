@@ -1,14 +1,19 @@
 import config from "../config.json"
 
-import Menu from './components/Menu'
 import Header from './components/Header'
+import Profile from './components/Profile'
 import Timeline from './components/Timeline'
 
 const HomePage = () => {
   return (
     <>
-      <Menu/>
+      <div style={{
+      display: "flex",
+      flexDirection: "column",
+      flex: 1,
+      }}></div>
       <Header/>
+      <Profile/>
       <Timeline lista={config.playlists}/>
     </>
   )
