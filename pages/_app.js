@@ -1,3 +1,5 @@
+import reset from './reset.css'
+
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
