@@ -12,11 +12,11 @@ export const StyledTimeline = styled.div`
   }
   img {
     aspect-ratio: 16/9;
-    font-weight: 500;
     object-fit: cover;
     width: 100%;
-    max-width: 210px;
+    max-width: 250px;
     height: auto;
+    border-radius: .5rem;
   }
   section {
     width: 100%;
@@ -37,6 +37,7 @@ export const StyledTimeline = styled.div`
         p {
           position: relative;
           display: inline-block;
+          margin-top: .5rem;
         }
       }
     }

@@ -47,8 +47,9 @@ table {
 }
 img {
 	display: block;
-	width: 30%;
 }
 a {
 	text-decoration: none;
+	font-style: none;
+	color: #202020;
 }

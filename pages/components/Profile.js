@@ -1,5 +1,6 @@
 import config from "../../config.json"
 import styled from 'styled-components'
+import Banner from "./Banner";
 
 const StyledProfile = styled.section`
   img {
@@ -13,16 +14,15 @@ const StyledProfile = styled.section`
     padding: 1rem 2rem;
     gap: 1rem;
     width: 100%;
-    margin-top: 4rem;
   }
 `;
 
 const Profile = () => {
   return (
-    <StyledProfile>
-      {/* <img src="banner" alt=""/> */}
-
-      <section className="user-info">
+    <>
+      <Banner/>
+      <StyledProfile>
+        <section className="user-info">
         <img src={`https://github.com/${config.github}.png`} alt="foto de perfil do usuario"/>
 
         <div className="user-title">
@@ -33,8 +33,10 @@ const Profile = () => {
             {config.job}
           </p>
         </div>
-      </section>
-    </StyledProfile>
+        </section>
+      </StyledProfile>
+    </>
+
   )
 }
 

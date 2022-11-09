@@ -1,4 +1,5 @@
 import config from "../config.json"
+import Favoritos from "./components/Favoritos"
 
 import Header from './components/Header'
 import Profile from './components/Profile'
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Header/>
       <Profile/>
       <Timeline lista={config.playlists}/>
+      <Favoritos favs={config.favoritos}/>
     </>
   )
 }
