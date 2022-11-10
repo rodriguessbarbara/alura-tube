@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Search from "./Search";
 
 const StyledHeader = styled.header`
   display: flex;
@@ -24,12 +25,13 @@ const StyledHeader = styled.header`
   }
 `;
 
-export default function Header() {
+export default function Header({ searchValue, setSearchValue }) {
   return (
     <StyledHeader>
       <div>
         <Logo />
       </div>
+        <Search searchValue={searchValue} setSearchValue={setSearchValue}/>
     </StyledHeader>
   );
 }

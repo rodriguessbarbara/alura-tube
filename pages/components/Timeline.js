@@ -44,7 +44,7 @@ export const StyledTimeline = styled.div`
   }
 `;
 
-const Timeline = (props) => {
+const Timeline = ({ searchValue, ...props }) => {
   const nomeListas = Object.keys(props.lista);
 
   return (
@@ -58,7 +58,13 @@ const Timeline = (props) => {
             <section>
               <h3>{nome}</h3>
               <div>
-                {videos.map((video) => {
+                {videos.filter((video) => {
+                  const tituloEmCaixaBaixa = video.title.toLowerCase();
+                  const resultadoBuscaCaixaBaixa = searchValue.toLowerCase();
+
+                  return tituloEmCaixaBaixa.includes(resultadoBuscaCaixaBaixa);
+                })
+                .map((video) => {
                   return (
                     <a href={video.url}>
                       <img src={video.thumb} alt=""/>

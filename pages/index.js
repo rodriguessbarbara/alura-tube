@@ -1,11 +1,15 @@
+import { useState } from "react"
+
 import config from "../config.json"
 import Favoritos from "./components/Favoritos"
 
-import Header from './components/Header'
+import Header from './components/Menu/Header'
 import Profile from './components/Profile'
 import Timeline from './components/Timeline'
 
 const HomePage = () => {
+  const [valorDaBusca, setValorDaBusca] = useState("");
+
   return (
     <>
       <div style={{
@@ -13,9 +17,9 @@ const HomePage = () => {
       flexDirection: "column",
       flex: 1,
       }}></div>
-      <Header/>
+      <Header searchValue={valorDaBusca} setSearchValue={setValorDaBusca}/>
       <Profile/>
-      <Timeline lista={config.playlists}/>
+      <Timeline searchValue={valorDaBusca} lista={config.playlists}/>
       <Favoritos favs={config.favoritos}/>
     </>
   )
