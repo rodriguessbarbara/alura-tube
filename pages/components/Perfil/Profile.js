@@ -1,6 +1,6 @@
-import config from "../../config.json"
+import config from "../../../config.json"
 import styled from 'styled-components'
-import Banner from "./Banner";
+import Banner from "./Banner"
 
 const StyledProfile = styled.section`
   img {

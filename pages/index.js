@@ -4,7 +4,7 @@ import config from "../config.json"
 import Favoritos from "./components/Favoritos"
 
 import Header from './components/Menu/Header'
-import Profile from './components/Profile'
+import Profile from './components/Perfil/Profile'
 import Timeline from './components/Timeline'
 
 const HomePage = () => {
