@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import styled from "styled-components"
 import config from "../config.json"
 import Favoritos from "./components/Favoritos"
 

@@ -1,0 +1,12 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/components/Favoritos": "pages/components/Favoritos.js",
+  "/components/Menu/Header": "pages/components/Menu/Header.js",
+  "/components/Menu/Search": "pages/components/Menu/Search.js",
+  "/components/Perfil/Banner": "pages/components/Perfil/Banner.js",
+  "/components/Perfil/Profile": "pages/components/Perfil/Profile.js",
+  "/components/Timeline": "pages/components/Timeline.js",
+  "/": "pages/index.js",
+  "/_document": "pages/_document.js"
+}
