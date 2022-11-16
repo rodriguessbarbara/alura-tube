@@ -1,11 +1,11 @@
 import { useState } from "react"
 import styled from "styled-components"
 import config from "../config.json"
-import Favoritos from "./components/Favoritos"
 
-import Header from './components/Menu/Header'
-import Profile from './components/Perfil/Profile'
-import Timeline from './components/Timeline'
+import Favoritos from "../src/components/Timeline/Favoritos"
+import Header from '../src/components/Menu/Header'
+import Profile from '../src/components/Perfil/Profile'
+import Timeline from '../src/components/Timeline/Timeline'
 
 const HomePage = () => {
   const [valorDaBusca, setValorDaBusca] = useState("");
