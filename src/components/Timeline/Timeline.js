@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import config from "../../../config.json"
+
+import Favoritos from "./Favoritos"
 
 export const StyledTimeline = styled.div`
 
@@ -81,7 +84,9 @@ const Timeline = ({ searchValue, ...props }) => {
           )
         })}
       </div>
+      <Favoritos favs={config.favoritos}/>
     </StyledTimeline>
+
   )
 }
 

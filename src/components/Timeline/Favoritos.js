@@ -36,21 +36,21 @@ const Favoritos = (props) => {
       <div>
         <h3>Favoritos</h3>
         {listasFav.map((lista) => {
-          const listas = props.favs[lista]
-          console.log(listas)
+          const listas = props.favs[lista];
+          console.log(listas);
 
           return (
             <section className="lista-favoritos">
               {listas.map((item) => {
                 return (
                   <div className="favorito">
-                    <img src={item.img} alt=""/>
+                    <img src={item.img} alt="" />
                     <p><a href={item.url} target="_blank"> {item.user} </a></p>
                   </div>
-                )
+                );
               })}
             </section>
-          )
+          );
         })}
       </div>
     </StyledFavorito>
