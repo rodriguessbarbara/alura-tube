@@ -2,6 +2,7 @@ import { CSSReset } from '../src/CSSReset'
 import { ThemeProvider } from 'styled-components'
 import ColorModeProvider, { ColorModeContext } from '../src/components/Menu/ColorMode';
 import { useContext } from 'react';
+import RegistrarVideo from '../src/components/RegistrarVideo/RegistrarVideo';
 
 const theme = {
     light: {
@@ -39,6 +40,7 @@ function MyApp({ Component, pageProps }) {
         <ThemeProvider theme={theme[contexto.mode]}>
             <CSSReset />
             <Component {...pageProps} />
+            <RegistrarVideo/>
         </ThemeProvider>
     )
 }
